@@ -1,4 +1,4 @@
-# app-pruebavue
+# app-trello
 
 ## Project setup
 ```
