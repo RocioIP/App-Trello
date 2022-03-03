@@ -3,9 +3,22 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav> -->
+  <AppHeader :user="user"></AppHeader>
   <router-view />
+  <AppFooter></AppFooter>
 </template>
-
+<script>
+// @ is an alias to /src
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+export default {
+  name: 'HomeView',
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -14,7 +27,7 @@
   text-align: center;
   color: #2c3e50;
 }
-
+/* 
 nav {
   padding: 30px;
 }
@@ -26,5 +39,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
